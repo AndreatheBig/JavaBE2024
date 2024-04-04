@@ -18,6 +18,7 @@ public class HelloWorld {
 //		Assegno un valore
 		corso = "Java Back End";
 		
+		// Da prendere con le pinze: informazione di servizio
 		var istituto = "Immaginazione e lavoro";
 		istituto = "Lavoro e immaginazione";
 
