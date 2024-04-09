@@ -22,6 +22,7 @@ public class Array {
 		studenti[10] = "Abderrahim";
 		studenti[11] = "Erika";
 		
+		
 //		Richiamo un valore attraverso il suo indice
 		System.out.println(studenti[0]);
 
