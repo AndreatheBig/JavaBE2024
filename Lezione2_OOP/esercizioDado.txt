@@ -1,0 +1,11 @@
+Costruisci una classe Dado con le seguenti prop e metodi:
+- numFacce
+- numRandom
+- costruttore(numFacce)
+- lancia(); Il metodo lancia estrae un numero casuale in base al num di facce definito nel costruttore
+
+Costruisci una classe DadoTester per creare il seguente set di dadi (6 facce, 12 facce, 20 facce)
+
+Gioco: se la somma dei 3 dadi lanciati contemporanemente è un numero superiore al 26 (+10 punti sul risultato finale) altrimenti (0 punti sul risultato finale).
+Per ogni dado il cui numero estratto è un multiplo di 2 (+6 punti sul risultato finale) altrimenti (0 punti sul risultato finale). 
+Calcola i punti totalizza con un singolo lancio di 3 dadi;

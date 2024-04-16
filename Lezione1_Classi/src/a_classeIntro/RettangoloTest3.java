@@ -19,6 +19,8 @@ public class RettangoloTest3 {
 
 
 
+
+
 //	Costruisco dei metodi per la mia classe. Il double rappresenta il tipo del valore che il metodo mi restituirà con il return
 	public double calcolaArea() {
 		double area = this.altezza * this.base;
@@ -56,6 +58,7 @@ public String toString() {
 //		Posso fare il Syso di rettangolo ottenendo la descrizione presente del toString()
 		System.out.println(rettangolo);
 		
+				
 	}
 
 
