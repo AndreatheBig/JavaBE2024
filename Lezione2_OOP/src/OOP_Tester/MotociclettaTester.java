@@ -19,5 +19,8 @@ public class MotociclettaTester {
 	 System.out.println(moto2.toString());
 	 System.out.println(moto3.toString());
 	 
+	 
+//	 System.out.println(moto1.marca);
+	 
 }
 }

@@ -8,4 +8,9 @@ Costruisci una classe DadoTester per creare il seguente set di dadi (6 facce, 12
 
 Gioco: se la somma dei 3 dadi lanciati contemporanemente è un numero superiore al 26 (+10 punti sul risultato finale) altrimenti (0 punti sul risultato finale).
 Per ogni dado il cui numero estratto è un multiplo di 2 (+6 punti sul risultato finale) altrimenti (0 punti sul risultato finale). 
-Calcola i punti totalizza con un singolo lancio di 3 dadi;
+Calcola i punti totalizzati con un singolo lancio di 3 dadi;
+
+Prevedi l'inserimento di una nuova modalità di gioco:
+- modalità SuperLucky (comando SL). Con questa modalità, al lancio dei dadi, se si ottiene lo stesso numero per ogni lancio si totalizzano 100 punti.
+
+- modalità Imbroglio (comando pippo). Con questa modalità si truccano i dadi. Tutti i dadi creati vengono ridotti dal punto di vista delle facce, assumendo un numero compreso tra 3 e 5. Il punteggio verrà calcolato come nella superLucky.
