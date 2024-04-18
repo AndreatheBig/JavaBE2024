@@ -109,15 +109,7 @@ public class DadoTester {
 					break;
 			}
 		}
-		
-		
-		
+			
 	}
-
-
-	
-	
-
-	
 
 }
