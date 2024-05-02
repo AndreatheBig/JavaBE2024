@@ -6,7 +6,6 @@ public class Canzone {
 	public String cantante;
 	
 	public Canzone(String titolo, String cantante) {
-		super();
 		this.titolo = titolo;
 		this.cantante = cantante;
 	}
@@ -19,5 +18,9 @@ public class Canzone {
 	public String toString() {
 		return "Canzone [titolo=" + titolo + ", cantante=" + cantante + "]";
 	}
+
+	
+	
+	
 
 }

@@ -2,31 +2,37 @@ package forme;
 
 // EREDITARIETA' : con extends eredito prop e metodi della classe genitore
 public class Quadrato extends Rettangolo{
-//	Il quadrato è un lato ripetuto 4 volte
-//	Il quadrato è un rettangolo particolare
+	
 	public Segmento lato;
 
-
-	public Quadrato( Segmento lato) {
-//		Utilizzo super per poter richiamre il costruttore della classe dalla quale sto ereditando
+	public Quadrato(Segmento lato) {
 		super(lato, lato);
 		this.lato = lato;
 	}
+
+
 	
-
-
-//	Rettangolo mioRettangolo = new Rettangolo(lato, lato);
-//	
-//	public double getArea() {
-//		double area = mioRettangolo.getArea();
+// Avendo usato la parola chiave extends non ho bisogno di sviluppare i metodi per il calcolo dell'are ae del perimetro. Nel momento in cui istanzierò un quadrato avrò già a disposizione il metodo getArea() e getPerimetro() ereditati dal Rettangolo
+	
+	
+	
+////	Mi servono dei metodi per calcolare area e perimetro
+//	public double calcolaArea() {
+//		Rettangolo rettangolo = new Rettangolo(lato, lato);
+//		double area = rettangolo.getArea();
+//				
+////		double area = this.lato.lunghezza * this.lato.lunghezza;
 //		return area;
 //	}
-
-//
-//	@Override
-//	public String toString() {
-//		return "Quadrato [lato=" + lato + "] - Area: ";
+//	
+//	public double calcolaPerimetro() {
+//		double perimetro = this.lato.lunghezza * 4;
+//		return perimetro;
 //	}
-
+//	
+	
+	
+	
+	
 	
 }

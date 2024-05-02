@@ -1,5 +1,7 @@
 package demo;
 
+import java.util.Scanner;
+
 import forme.Punto;
 import forme.Quadrato;
 import forme.Rettangolo;
@@ -10,7 +12,11 @@ public class geometriaTester {
 	
 	public static void main(String[] args) {
 		
-		Punto a = new Punto(2, 3);
+		Scanner sc = new Scanner(System.in);
+		int xa = sc.nextInt();
+		int xb = sc.nextInt();
+		
+		Punto a = new Punto(xa, xb);
 		Punto b = new Punto(5, 3);
 		Punto c = new Punto(4, 8);
 		
@@ -34,12 +40,12 @@ public class geometriaTester {
 		
 		System.out.println(ab.calcolaLungSegmento());
 		
-//		Creo un quadrato
-		Quadrato q1 = new Quadrato(ab);
-		System.out.println("L'area vale: " + q1.getArea());
-		System.out.println("Il perimetro vale: " + q1.getPerimetro());
-//		ATT: se non definisco un toString() nel Quadrato allora recupero il toString() del Rettangolo
-		System.out.println(q1.toString());
-		
+// 		Creo un quadrato, per crearlo ho bisogno solo di 1 segmento
+		Quadrato quad1 = new Quadrato(ab);
+		System.out.println("L'area vale: " + quad1.getArea());
+		System.out.println("Il perimetro vale: " + quad1.getPerimetro());
+		System.out.println("Il lato vale: " + quad1.lato.lunghezza);
+		System.out.println("Il lato ( base del Rettangolo) vale: " + quad1.base);
+		System.out.println("Il lato ( altezza del Rettangolo) vale: " + quad1.altezza);
 	}
 }

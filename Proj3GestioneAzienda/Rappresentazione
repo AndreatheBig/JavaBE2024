@@ -1,0 +1,15 @@
+Nell'azienda X ci sono le seguenti figure:
+
+Manager
+Programmatore
+Stagista
+
+Tutte e 3 le figure ereditano da un'unica classe Dipendente
+Dipendente (matricola, nome, cognome)
+ - presentati()
+ 
+Ognuna delle figure avrà i suoi metodi per il calcolo dello stipendio
+
+Nel controller ho la classe AziendaCtrl, nella quale aggiungo dipendenti di ogni tipo. Crea un metodo che aggiunge anche il ruolo.
+
+Nella view posso aggiungere dipendenti e mostrare le varie info dell'azienda come il nome e il numero di dipendenti

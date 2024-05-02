@@ -2,7 +2,7 @@ package forme;
 
 public class Rettangolo {
 	
-	Segmento base, altezza;
+	public Segmento base, altezza;
 
 	public Rettangolo(Segmento base, Segmento altezza) {
 		this.base = base;

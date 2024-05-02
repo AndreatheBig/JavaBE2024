@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -30,6 +31,8 @@ public class CanzoniCtrl {
 		};
 		
 		for (String song : raccolta) {
+//			Il metodo .split() applicato su una stringa genera un array. Tra le parentesi gli passo un carattere, un pattern grazie al quale esegue lo split
+			
 			String separate[] = song.split(";");
 			String titolo = separate[0];
 			String cantante = separate[1];
@@ -40,23 +43,29 @@ public class CanzoniCtrl {
 	
 	
 	public void caricaCanzoniDaFile() {
-		File fileDB = new File("./canzoni.csv");
+//		Qui leggo il file canzoni.csv
+		
+		File f = new File("./canzoni.csv");
 		
 		try {
-			Scanner sc = new Scanner(fileDB);
+			Scanner s = new Scanner(f);
 			
-			while(sc.hasNextLine()) {
-				String riga = sc.nextLine();
-				String[] separate = riga.split(",");
-				String titolo = separate[0];
-				String cantante = separate[1];
-				Canzone canzone = new Canzone(titolo, cantante);
-				this.canzoni.add(canzone);
+			while(s.hasNextLine()) {
+				String riga = s.nextLine();
+				String rigaSpezzata[] = riga.split(",");
+				String cantante = rigaSpezzata[0];
+				String titolo = rigaSpezzata[1];
+				Canzone song = new Canzone(titolo, cantante);
+				this.canzoni.add(song);				
 			}
+		
+		} catch (FileNotFoundException e) {
 			
-		}catch (Exception e){
-				e.printStackTrace();
+			e.printStackTrace();
 		}
+		
+		
+		
 		
 	}
 
